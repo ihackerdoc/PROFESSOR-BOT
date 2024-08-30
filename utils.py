@@ -308,12 +308,12 @@ async def get_shortlink(link):
     params = {'api': SHORT_API, 'url': link}
     
     try:
-        async with aiohttp.ClientSession() as session:
+        timeout = aiohttp.ClientTimeout(total=10)  # Adjust timeout as needed
+        async with aiohttp.ClientSession(timeout=timeout) as session:
             async with session.get(url, params=params, ssl=False) as response:
-                response.raise_for_status()  # Raise an exception for HTTP errors
+                response.raise_for_status()
                 data = await response.json()
                 
-                # Validate the response
                 if "status" in data and data["status"] == "success":
                     if "shortenedUrl" in data:
                         return data['shortenedUrl']
@@ -333,7 +333,6 @@ async def get_shortlink(link):
     except Exception as e:
         logger.error(f"Unexpected error: {e}")
         return link
-
 
 # from Midukki-RoBoT
 def extract_time(time_val):
