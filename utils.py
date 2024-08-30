@@ -306,17 +306,32 @@ def get_time(seconds):
 async def get_shortlink(link):
     url = f'{SHORT_URL}/api'
     params = {'api': SHORT_API, 'url': link}
+    
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
+            async with session.get(url, params=params, ssl=False) as response:
+                response.raise_for_status()  # Raise an exception for HTTP errors
                 data = await response.json()
-                if data["status"] == "success":
-                    return data['shortenedUrl']
+                
+                # Validate the response
+                if "status" in data and data["status"] == "success":
+                    if "shortenedUrl" in data:
+                        return data['shortenedUrl']
+                    else:
+                        logger.error("Shortened URL not found in the response.")
+                        return link
                 else:
-                    logger.error(f"Error: {data['message']}")
+                    message = data.get('message', 'Unknown error')
+                    logger.error(f"API error: {message}")
                     return link
+    except aiohttp.ClientResponseError as e:
+        logger.error(f"HTTP error: {e.status} - {e.message}")
+        return link
+    except aiohttp.ClientError as e:
+        logger.error(f"Client error: {e}")
+        return link
     except Exception as e:
-        logger.error(e)
+        logger.error(f"Unexpected error: {e}")
         return link
 
 
