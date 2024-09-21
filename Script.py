@@ -212,25 +212,28 @@ Fʀᴇᴇ Dɪꜱᴋ: {}"""
     
     BUTTON_LOCK_TEXT = "Hᴇʏ {query}\nTʜɪꜱ Iꜱ Nᴏᴛ Fᴏʀ Yᴏᴜ. Sᴇᴀʀᴄʜ Yᴏᴜʀ Sᴇʟꜰ"
    
-    FORCE_SUB_TEXT = "Sᴏʀʀʏ Bʀᴏ Yᴏᴜʀ Nᴏᴛ Jᴏɪɴᴇᴅ Mʏ Cʜᴀɴɴᴇʟ Sᴏ Pʟᴇᴀsᴇ Cʟɪᴄᴋ Jᴏɪɴ Bᴜᴛᴛᴏɴ Tᴏ Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ Aɴᴅ Tʀʏ Aɢᴀɪɴ"
+    FORCE_SUB_TEXT = "ꜱᴇᴇᴍꜱ ʟɪᴋᴇ ʏᴏᴜ ʜᴀᴠᴇɴ'ᴛ ᴊᴏɪɴᴇᴅ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ʏᴇᴛ . ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴊᴏɪɴ ʙᴜᴛᴛᴏɴ ᴀɴᴅ ᴛʜᴇɴ ᴛʀʏ ᴀɢᴀɪɴ ✌🏻"
    
-    WELCOM_TEXT = """Hᴇʏ {user} 💞
+    WELCOM_TEXT = """Hᴇʏ {user} 👋🏻
 
 Wᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}.
 
-ꜱʜᴀʀᴇ & ꜱᴜᴩᴩᴏʀᴛ, ʀᴇqᴜᴇꜱᴛ ʏᴏᴜ ᴡᴀɴᴛᴇᴅ ᴍᴏᴠɪᴇꜱ"""
+ᴊᴜꜱᴛ ᴛʏᴘᴇ ᴛʜᴇ ɴᴀᴍᴇ ᴏꜰ ᴛʜᴇ ᴍᴏᴠɪᴇ/ꜱᴇʀɪᴇꜱ/ᴀɴɪᴍᴇ 
+ᴏʀ ᴡʜᴀᴛᴇᴠᴇʀ ʏᴏᴜ ᴡᴀɴɴᴀ ᴡᴀᴛᴄʜ
+
+ꜱʜᴀʀᴇ & ꜱᴜᴘᴘᴏʀᴛ"""
   
     IMDB_TEMPLATE = """<b>Qᴜᴇʀʏ: {query}</b>
 
-🔖 𝗧𝗜𝗧𝗟𝗘: <a href={url}>{title}</a>
-🎭 𝗚𝗘𝗡𝗥𝗘𝗦: {genres}
-📆 𝗬𝗘𝗔𝗥: <a href={url}/releaseinfo>{year}</a>
-🌟 𝗥𝗔𝗧𝗜𝗡𝗚: <a href={url}/ratings>{rating}</a>/10
-🎙️ 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘𝗦: <code>{languages}</code>
-🎥 𝗗𝗜𝗥𝗘𝗖𝗧𝗢𝗥: {director}
-⏰ 𝗥𝗨𝗡𝗧𝗜𝗠𝗘: {runtime} Minutes
-🌍 𝗖𝗢𝗨𝗡𝗧𝗥𝗬: <code>{countries}</code>
-📖 𝗦𝗧𝗢𝗥𝗬: <code>{plot}</code>
+🔖 ᴛɪᴛʟᴇ: <a href={url}>{title}</a>
+🎭 ɢᴇɴʀᴇ: {genres}
+📆 ʏᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>
+🌟 ʀᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10
+🎙️ ʟᴀɴɢᴜᴀɢᴇꜱ: <code>{languages}</code>
+🎥 ᴅɪʀᴇᴄᴛᴏʀ: {director}
+⏰ ʀᴜɴᴛɪᴍᴇ: {runtime} Minutes
+🌍 ᴄᴏᴜɴᴛʀʏ: <code>{countries}</code>
+📖 ꜱᴛᴏʀʏ: <code>{plot}</code>
 
 📌 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗯𝘆 🧑‍💻: {message.from_user.mention}"""
    
