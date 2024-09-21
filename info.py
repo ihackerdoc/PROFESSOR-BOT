@@ -63,9 +63,7 @@ P_TTI_SHOW_OFF = is_enabled(environ.get('P_TTI_SHOW_OFF', "True"), True)
 PM_IMDB = is_enabled(environ.get('PM_IMDB', "True"), True)
 IMDB = is_enabled(environ.get('IMDB', "True"), True)
 SINGLE_BUTTON = is_enabled(environ.get('SINGLE_BUTTON', "True"), True)
-CUSTOM_FILE_CAPTION = environ.get(
-    "CUSTOM_FILE_CAPTION", 
-    "{file_name}\n•────•────────•────•\n📌 ᴊᴏɪɴ : <a href=\"https://t.me/Movie_Search_Group_by_TST\">ᴍᴏᴠɪᴇᴛɪᴍᴇ</a> 🎬\n📌 ᴊᴏɪɴ : <a href=\"https://t.me/+prlX5HRWM-cyMmE1\">ᴍᴏᴠɪᴇꜰɪʟᴇꜱ</a>📁\n📌 ᴊᴏɪɴ : <a href=\"https://t.me/+7D7GmraxuUY3Yzk1\">ᴡᴇʙꜱʜᴏᴡꜱ</a>🍿\n📌 ꜱᴜʙꜱᴄʀɪʙᴇ ɴᴏᴡ : <a href=\"https://t.me/latest_hindi_movies_hub\">ᴄʟɪᴄᴋ</a> 👈🏻\n•────•────────•────•\n🎗 ʝσιи • ѕнαяє • ѕυρρσят 🎗")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "{file_name}\n•────•────────•────•\n📌 ᴊᴏɪɴ : <a href=\"https://t.me/Movie_Search_Group_by_TST\">ᴍᴏᴠɪᴇᴛɪᴍᴇ</a> 🎬\n📌 ᴊᴏɪɴ : <a href=\"https://t.me/+prlX5HRWM-cyMmE1\">ᴍᴏᴠɪᴇꜰɪʟᴇꜱ</a>📁\n📌 ᴊᴏɪɴ : <a href=\"https://t.me/+7D7GmraxuUY3Yzk1\">ᴡᴇʙꜱʜᴏᴡꜱ</a>🍿\n📌 ꜱᴜʙꜱᴄʀɪʙᴇ ɴᴏᴡ : <a href=\"https://t.me/latest_hindi_movies_hub\">ᴄʟɪᴄᴋ</a> 👈🏻\n•────•────────•────•\n🎗 ʝσιи • ѕнαяє • ѕυρρσят 🎗")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", None)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
