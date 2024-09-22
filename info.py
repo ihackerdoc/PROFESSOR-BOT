@@ -49,7 +49,7 @@ WELCOM_TEXT = environ.get("WELCOM_TEXT", script.WELCOM_TEXT)
 PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
-RemoveBG_API = environ.get("RemoveBG_API", "")
+RemoveBG_API = environ.get("RemoveBG_API", "ftiwhaPS26Jx3HdQFT5gw3Mn")
 
 # url shortner
 SHORT_URL = environ.get("SHORT_URL")
