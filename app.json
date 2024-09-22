@@ -3,7 +3,7 @@
     "description": "The Telegram Autofilter Bot",
     "logo": "https://graph.org/file/b7e8484f6395a180b6380.jpg",
     "keywords": ["Telegram", "auto-filter", "MrMKN"],
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "repository": "https://github.com/ihackerdoc/PROFESSOR-BOT",
     "env": {
         "WEBHOOK": {
             "description": "True/False if your server is web support required? the value is True else False",
@@ -76,8 +76,8 @@
         },
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
-            "value": "MKN_BOTZ_DISCUSSION_GROUP",
-            "required": false
+            "value": "i_hackerdoc",
+            "required": true
         },
         "IMDB": {
             "description": "Imdb, the view of information when making True/False",
@@ -102,7 +102,7 @@
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
             "value": "True",
-            "required": false         
+            "required": true        
         },
         "START_MESSAGE": {
             "description": "bot start message text [ {user} = bot startd user name {bot} = your bot name",
@@ -151,7 +151,7 @@
         },
         "RemoveBG_API": {
             "description": "background remover website api key. get from https://www.remove.bg/b/background-removal-api",
-            "required": false 
+            "required": true 
         },
         "P_TTI_SHOW_OFF": { 
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
