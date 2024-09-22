@@ -77,7 +77,7 @@
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
             "value": "i_hackerdoc",
-            "required": true
+            "required": false
         },
         "IMDB": {
             "description": "Imdb, the view of information when making True/False",
@@ -102,7 +102,7 @@
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
             "value": "True",
-            "required": true        
+            "required": false        
         },
         "START_MESSAGE": {
             "description": "bot start message text [ {user} = bot startd user name {bot} = your bot name",
@@ -151,7 +151,7 @@
         },
         "RemoveBG_API": {
             "description": "background remover website api key. get from https://www.remove.bg/b/background-removal-api",
-            "required": true 
+            "required": false 
         },
         "P_TTI_SHOW_OFF": { 
             "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
