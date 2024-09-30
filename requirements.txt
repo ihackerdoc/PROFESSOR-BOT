@@ -34,3 +34,6 @@ wheel
 ujson
 wget
 pytz
+instaloader==4.9.7          # For downloading Instagram posts and reels
+pytesseract==0.3.8          # For text extraction from images
+aiomultiprocess==1.4.0      # For parallel processing tasks
